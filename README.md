@@ -10,7 +10,7 @@ Stephen J. Wright, Robert D. Nowak, and Mario Figueiredo, available from https:/
 
 Salman Asif, available from https://github.com/sasif/L1-homotopy
 
-Martin Arjovsky, Amar Shah, and Yoshua Bengio, avaiable from github.com/amarshah/complex_RNN
+Martin Arjovsky, Amar Shah, and Yoshua Bengio, avaiable from https://github.com/amarshah/complex_RNN
 
 
 
