@@ -4,7 +4,7 @@ S. Wisdom, T. Powers, J. Pitton, and L. Atlas, “Interpretable Recurrent Neural
 
 
 
-## Based on code by:
+## Includes code by:
 
 Stephen J. Wright, Robert D. Nowak, and Mario Figueiredo, available from https://www.lx.it.pt/~mtf/SpaRSA/SpaRSA_2.0.zip
 
