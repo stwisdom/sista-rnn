@@ -22,7 +22,7 @@ wavelet_type='daub8';
 % load up the data
 %data_name=sprintf('caltech256_R%d_N%d_%s',R,N,wavelet_type);
 data_name='caltech256'
-data=load(sprintf       ('data_%s',data_name));
+data=load(sprintf       ('../data_%s',data_name));
 
 % remove training data, since we don't need it for these baselines:
 data=rmfield(data,'xtrain');
@@ -44,7 +44,7 @@ F=eye(N);
 lam1=0.5;
 lam2=1.0;
 
-flag_save_ref=0;
+flag_save_ref=1;
 
 % % have to break these out because parfor doesn't allow 3d matrices (why?!)
 % iters_ista_all_fix_noOracle=zeros(T,ntest);
@@ -236,8 +236,8 @@ parfor itest=1:ntest
             string_oracle='noOracle';
         end
         savename=sprintf('baseline_%s_K%d_lam1%f_lam2%f_%s',string_oracle,tol,lam1,lam2,data_name);
-        path_root=fullfile('python/caltech256',savename);
-        path_ref=fullfile('python/caltech256/ref_matlab');
+        path_root=fullfile('../caltech256',savename);
+        path_ref=fullfile('../caltech256/ref_matlab');
         savefile=strsplit(strtrim(data.yfiles_test(itest,:)),'caltech256/');
         savefile=savefile{end};
         savefile=strrep(savefile,'.jpg','.png');

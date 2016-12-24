@@ -1,7 +1,7 @@
 clear variables;
 
-path_ref='caltech256/ref_matlab';
-path_root='caltech256';
+path_ref='../caltech256/ref_matlab';
+path_root='../caltech256';
 dirs_exp={
     'K3_lr0-0001_lam0-5_v3_ds1_N128_latticeNoInputConn_randomInit/recon_best',...
     'K3_lr0-0001_LSTM_ds1_N128_100epochs/recon_best',...
@@ -16,7 +16,7 @@ labels_exp={
 
 %results_mat='scores_caltech256_all.mat';
 
-results_mat='scores_caltech256_LSTM_SISTAparams.mat';
+results_mat='../scores_caltech256_LSTM_SISTAparams.mat';
 dirs_exp=dirs_exp(end-2:end);
 labels_exp=labels_exp(end-2:end);
 
@@ -28,7 +28,7 @@ R=4;
 N=128;
 wavelet_type='daub8';
 % load up the data
-data=load('data_caltech256.mat');
+data=load('../data_caltech256.mat');
 
 yfiles_test=data.yfiles_test;
 

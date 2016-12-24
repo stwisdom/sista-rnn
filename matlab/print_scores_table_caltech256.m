@@ -1,6 +1,6 @@
 clear variables;
 
-L=load('scores_caltech256_LSTM_SISTAparams.mat');
+L=load('../scores_caltech256_LSTM_SISTAparams.mat');
 
 scores=L.scores;
 labels_exp=L.labels_exp;
