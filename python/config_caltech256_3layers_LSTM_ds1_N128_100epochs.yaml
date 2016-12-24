@@ -1,0 +1,38 @@
+%YAML 1.2
+---
+dataset : 'caltech256'
+path_dataset : '/data1/swisdom/caltech256'
+#path_matrices : '../matrices_caltech_R4_N128.mat'
+path_matrices : 'matlab/matrices_caltech_R4_N128_daub8.mat'
+path_ref : 'caltech256/K3_lr0-0001_lam0-5_v3_ds1_N128/ref'
+path_recon_init : 'caltech256/K3_lr0-0001_LSTM_ds1_N128_100epochs/recon_init'
+path_recon_best : 'caltech256/K3_lr0-0001_LSTM_ds1_N128_100epochs/recon_best'
+matfile_data : 'data_caltech256.mat'
+std_cols : 16.433 #std. dev. of columns of images
+color : 'y' #use grayscale intensity
+N : 128
+model : 'LSTM'
+loss_function : 'MSE'
+alph : 1.0
+lam1 : 0.5
+lam2 : 1.0
+Vnorm : 0.0
+Unorm : 0.0
+flag_broadcast_silo : False
+K : 3
+seed : 2016
+learning_rate : 0.0001
+batch_size : 50
+downsample_train : 1
+num_allowed_test_inc : 4000
+niter : 49000 #(490 minibatches/epoch)*(10 epochs)
+nepoch : 100
+patience : 100
+savefile : 'results_caltech_K3_lr0-0001_LSTM_ds1_N128_100epochs'
+histfile : 'history_caltech_K3_lr0-0001_LSTM_ds1_N128_100epochs'
+flag_oracle_s1 : 0
+flag_evaluate_initial : 1
+flag_evaluate : 1
+flag_train_sista_params : 0
+untied_sista_parameters : []
+
