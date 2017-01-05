@@ -1,6 +1,9 @@
 # sista-rnn
-Code for the paper
-S. Wisdom, T. Powers, J. Pitton, and L. Atlas, “Interpretable Recurrent Neural Networks Using Sequential Sparse Recovery,” arXiv preprint arXiv:1611.07252, 2016.
+Code for the papers
+
+S. Wisdom, T. Powers, J. Pitton, and L. Atlas, “Building Recurrent Networks by Unfolding Iterative Thresholding for Sequential Sparse Recovery,” ICASSP 2017, New Orleans, LA, USA, March 2017
+
+S. Wisdom, T. Powers, J. Pitton, and L. Atlas, “Interpretable Recurrent Neural Networks Using Sequential Sparse Recovery,” arXiv preprint arXiv:1611.07252, 2016. Presented at NIPS 2016 Workshop on Interpretable Machine Learning in Complex Systems, Barcelona, Spain, December 2016
 
 
 
